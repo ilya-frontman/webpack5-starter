@@ -1,0 +1,16 @@
+- var bigImg = require("Img/bigimg.jpg")
+- var cubes = require("Img/cubes.png")
+- var owl = require("Img/owl.jpeg")
+
+include ../modules/head
+include ../modules/header
+
+body
+  main 
+    h1.text-3xl.font-bold.underline Hello Webpack
+    img(src=bigImg alt="big-img")
+    img(src=cubes alt="cubes")
+    img(src=owl alt="owl")
+    include ../svg/circle
+
+include ../modules/footer
