@@ -1,5 +1,6 @@
-import 'Scss/global';
+/* // eslint-disable-next-line import/no-unresolved
+import 'Scss/global'; */
 
-const outConsole = () => console.log('worked!');
+const sum = (a, b) => a + b;
 
-outConsole();
+export default sum;

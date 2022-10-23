@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo -e "===\n>> Pre-commit Hook: Run jest tests"
+npm run test
+echo -e "===\n>> Pre-commit Hook: End jest part"
+
+echo -e "===\n>> Pre-commit Hook: Checking linters"
+npm run lint 
+echo -e "===\n>> Pre-commit Hook: End linters part"
+
+echo -e "===\n>> Pre-commit Hook: Run format code"
+npm run format
+echo -e "===\n>> Pre-commit Hook: End format part"
